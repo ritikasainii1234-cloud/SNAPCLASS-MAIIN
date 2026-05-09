@@ -12,7 +12,8 @@ from src.database.db import get_all_students, create_student, get_student_subjec
 import time
 
 
-
+from src.components.dialog_enroll import enroll_dialog
+from src.components.subject_card import subject_card
 def student_dashboard():
     student_data = st.session_state.student_data
     student_id = student_data['student_id']
